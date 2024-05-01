@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Home</title>
+    <link rel="stylesheet" href="Home.css">
+    <style>
+        .actors-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .actor {
+            text-align: center;
+            width: calc(25% - 20px); /* 25% minus margin */
+        }
+        .actor img {
+            width: 90%;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="SignIn.html">Logout</a></li>
+                <li><a href="Profile.html">Profile</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="index.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="about">
+            <h2>About Expendables</h2>
+            <p>Expend4bles (also known as Expendables 4) is a 2023 American action comedy film[4] that is the fourth installment in The Expendables franchise, following The Expendables 3 (2014). The film stars an ensemble cast including Jason Statham, Sylvester Stallone, Dolph Lundgren and Randy Couture reprising their roles from previous films, with Curtis "50 Cent" Jackson, Megan Fox, Tony Jaa, Iko Uwais and Andy García joining the cast. It is directed by Scott Waugh from a screenplay by Kurt Wimmer, Tad Daggerhart, and Max Adams, based on a story by Spenser Cohen, Wimmer, and Daggerhart.</p>
+            <p>Expend4bles was released in mainland China on September 15, 2023, and in the United States a week later, by Lionsgate. The film received negative reviews from critics, who criticized the screenplay, plot, Stallone's limited screen time, direction, some of the new characters and visual effects, but praised Statham’s performance and action sequences. It has grossed $51 million worldwide against a budget of $100 million, making it a box-office bomb. It was nominated for seven Golden Raspberry Awards, winning two, for Worst Supporting Actor and Worst Supporting Actress.</p>
+        </section>
+
+        <section id="blog">
+            <h2>About Cast</h2>
+            <div class="actors-container">
+                <div class="actor">
+                    <img src="Stallone.jpg">
+                    <p>Sylvester Stallone as Barney Ross</p>
+                </div>
+                <div class="actor">
+                    <img src="Statham.jpg" alt="Jason Statham">
+                    <p>Jason Statham as Lee Christmas</p>
+                </div>
+                <div class="actor">
+                    <img src="Laundgren.jpg">
+                    <p>Dolph Lundgren as Gunner Jensen</p>
+                </div>
+                <div class="actor">
+                    <img src="Couture.jpg">
+                    <p> Randy Couture as Toll</p>
+                </div>
+                <div class="actor">
+                    <img src="Fox.jpg">
+                    <p> Megan Fox as Gina</p>
+                </div>
+                <div class="actor">
+                    <img src="JAA.jpg">
+                    <p> Tony Jaa as Decha</p>
+                </div>
+                <div class="actor">
+                    <img src="Uwais.jpg">
+                    <p> Iko Uwais as Suarto Rahmat</p>
+                </div>
+                <div class="actor">
+                    <img src="Scipio.jpg">
+                    <p> Jacon Scibio as Galan</p>
+                </div>
+                <div class="actor">
+                    <img src="50 cent.jpg">
+                    <p> 50 Cent as Easy</p>
+                </div>
+                <div class="actor">
+                    <img src="Tran.jpg">
+                    <p> Levy Tran as Lash</p>
+                </div>
+                <div class="actor">
+                    <img src="Garcia.jpg">
+                    <p> Andy Garcia as Marsh</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: tekewerkewer@gmail.com</p>
+            <p>Phone: 123-456-7890</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Expendables Things. All rights reserved.</p>
+        <button onclick="scrollToTop()">Scroll to Top</button>
+    </footer>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>

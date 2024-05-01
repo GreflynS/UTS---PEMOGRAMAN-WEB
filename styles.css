@@ -1,0 +1,243 @@
+/* CSS untuk latar belakang hitam */
+body {
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    display: flex; /* Keeps existing flex layout */
+    justify-content: space-between; /* Distributes space between items */
+    align-items: center; /* Vertically centers the items */
+    padding: 20px;
+}
+
+#header nav {
+    margin-left: 50%; /* Moves the nav to the right */
+}
+
+
+/* Untuk memindahkan menu navigasi ke kanan */
+nav {
+    margin-left: 10%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Menghilangkan margin bawaan */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 30%; 
+    margin-left: 10px; /* Mengurangi margin kiri */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo {
+    width: 50px; /* Sesuaikan dengan ukuran logo */
+    height: auto;
+    margin-right: 10px; /* Jarak antara logo dan judul */
+}
+
+h1 {
+    margin: 0;
+}
+
+h1 span {
+    display: inline-block; /* Agar bisa diberi margin */
+}
+
+/* CSS untuk kontainer artikel */
+.article-container {
+    width: calc(50% - 20px); /* Setengah dari lebar layar dikurangi padding */
+    float: left; /* Menjadikan kontainer berada di sebelah kiri */
+    background-color: #a9a9a9; /* Warna abu-abu */
+    padding: 20px; /* Ruang antara konten dan tepi kontainer */
+    box-sizing: border-box; /* Menghitung padding dalam lebar elemen */
+    margin-top: 20px; /* Menambahkan jarak ke bawah dari slideshow */
+    margin-bottom: 10px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+/* CSS untuk kontainer teks */
+.text-container {
+    clear: both; /* Membersihkan floating sebelumnya */
+    width: 100%; /* Lebar sesuai dengan konten */
+    max-width: 1260px; /* Mengatur lebar maksimum */
+    padding: 20px; /* Ruang antara konten dan tepi kontainer */
+    box-sizing: border-box; /* Menghitung padding dalam lebar elemen */
+    background-color: #d3d3d3; /* Warna abu-abu */
+    border-radius: 10px;
+    margin-top: 30%; /* Jarak antara .text-container dengan .article-container */
+    margin-bottom: 20px; /* Menambahkan jarak antara .text-container dengan elemen berikutnya */
+    margin-left: auto; /* Tengahkan .text-container secara horizontal */
+    margin-right: auto; /* Tengahkan .text-container secara horizontal */
+}
+
+/* CSS untuk sidebar */
+#sidebar {
+    width: calc(50% - 110px); /* Setengah dari lebar layar dikurangi padding dan jarak antara sidebar */
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box; /* Menambahkan padding ke lebar */
+    position: fixed;
+    top: 60px; /* Tinggi header */
+    right: 0; /* Geser ke bagian kanan */
+    bottom: 0;
+}
+
+/* CSS untuk header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    z-index: 1000; /* Pastikan header muncul di atas konten lain */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* CSS untuk slideshow */
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    padding-top: 30%; /* Mengatur ukuran slideshow menjadi lebih kecil */
+}
+
+.slideshow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slideshow img {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slideshow img.active {
+    display: block;
+}
+
+/* CSS untuk penanda halaman */
+.slideshow-pagination {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slideshow-pagination .pagination-item {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.slideshow-pagination .pagination-item.active {
+    background-color: #000000; /* Warna aktif */
+}
+
+
+/* CSS untuk main dan footer */
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* CSS untuk kontainer video */
+.video-container {
+    width: calc(50% - 20px); /* Setengah dari lebar layar dikurangi padding */
+    float: right; /* Menjadikan kontainer berada di sebelah kanan */
+    padding: 20px; /* Ruang antara konten dan tepi kontainer */
+    box-sizing: border-box; /* Menghitung padding dalam lebar elemen */
+    margin-top: 20px; /* Menambahkan jarak ke bawah dari slideshow */
+}
+
+.logo {
+    width: 50px; /* Sesuaikan dengan ukuran logo */
+    height: auto;
+    margin-right: 10px; /* Jarak antara logo dan judul */
+}
+
+.casting-container {
+    width: calc(50% - 20px); /* Setengah dari lebar layar dikurangi padding */
+    float: right; /* Menjadikan kontainer berada di sebelah kanan */
+    padding: 20px; /* Ruang antara konten dan tepi kontainer */
+    box-sizing: border-box; /* Menghitung padding dalam lebar elemen */
+    margin-top: -40%; /* Menambahkan jarak ke bawah dari slideshow */
+    margin-left: 10%;
+} 
+
+.gallery-container img {
+    width: calc(40% - 10px); /* Mengatur lebar gambar agar berukuran kecil dan bisa berjajar */
+    height: auto; /* Tinggi gambar disesuaikan agar tidak terdistorsi */
+    margin-bottom: 20px; /* Jarak antara gambar */
+    display: inline-block; /* Agar gambar berjajar */
+    box-sizing: border-box; /* Menghitung padding dalam lebar elemen */
+    margin-left: 5%;
+    padding: 5px; /* Ruang antara gambar */
+    transition: transform 0.3s ease; /* Efek transisi saat membesarkan gambar */
+    margin-right: 30%;
+    margin-top: 2%;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.2); /* Memperbesar gambar saat dihover */
+}
+
+
+/* CSS untuk menyembunyikan tombol "Lihat Lebih Banyak" */
+#show-more-container {
+    display: none;
+}
+
+/* CSS untuk menyesuaikan tampilan tombol "Lihat Lebih Banyak" */
+#showMoreBtn {
+    display: block;
+    margin: 10px auto; /* Menengahkan tombol */
+}
+
